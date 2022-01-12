@@ -1,0 +1,14 @@
+{
+  "users": [
+    { "id": 1, "username": "admin", "password": "admin" },
+    { "id": 2, "username": "normal", "password": "normal" },
+    { "id": 3, "username": "uteq", "password": "uteq" }
+  ],
+  "comments": [
+    { "id": 1, "body": "some comment", "postId": 1 },
+    { "id": 2, "body": "some comment", "postId": 1 }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
