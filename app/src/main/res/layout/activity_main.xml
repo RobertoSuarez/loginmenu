@@ -60,12 +60,12 @@
 
     <Button
         android:id="@+id/btnLogin"
-        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        style="@style/Widget.MaterialComponents.Button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="12dp"
         android:layout_marginTop="16dp"
-        android:onClick="sendTablero"
+        android:onClick="btnLogin"
         android:text="Iniciar sesión"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

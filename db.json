@@ -1,8 +1,23 @@
 {
   "users": [
-    { "id": 1, "username": "admin", "password": "admin" },
-    { "id": 2, "username": "normal", "password": "normal" },
-    { "id": 3, "username": "uteq", "password": "uteq" }
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin",
+      "modo": "administrador"
+    },
+    {
+      "id": 2,
+      "username": "normal",
+      "password": "normal",
+      "modo": "normal"
+    },
+    {
+      "id": 3,
+      "username": "uteq",
+      "password": "uteq",
+      "modo": "administrador"
+    }
   ],
   "comments": [
     { "id": 1, "body": "some comment", "postId": 1 },
