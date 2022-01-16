@@ -53,10 +53,11 @@ public class MainActivity extends AppCompatActivity {
 
 //                Toast.makeText(this, "Fatal, parace que no funca tu usuario o contraseña", Toast.LENGTH_SHORT).show();
 
-    public void SendTableMenu(String modo) {
+    public void SendTableMenu(String modo, String usuario) {
         System.out.println("Modo: " + modo);
         Intent intent = new Intent(this, MenuActividades.class);
         intent.putExtra("MODO", modo);
+        intent.putExtra("USERNAME", usuario);
         startActivity(intent);
     }
 
@@ -73,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
                                 JSONObject usuario = response.getJSONObject(i);
                                 // Revisamos si es el usuario
                                 if (usuario.getString("username").equals(username) && usuario.getString("password").equals(password)) {
-                                    activity.SendTableMenu(usuario.getString("modo"));
+                                    activity.SendTableMenu(usuario.getString("modo"), usuario.getString("username"));
                                     return;
                                 }
 

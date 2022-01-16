@@ -22,4 +22,9 @@
         android:name="com.example.loginmenu.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/listaUsuario"
+        android:name="com.example.loginmenu.ListaUsuario"
+        android:label="fragment_lista_usuario"
+        tools:layout="@layout/fragment_lista_usuario" />
 </navigation>
